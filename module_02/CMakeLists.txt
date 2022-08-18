@@ -15,4 +15,10 @@ add_executable(
     main.cpp    
 )
 
-target_link_libraries(Calculator my_Math my_Print)
+add_executable(
+    Calculator_02
+    main.cpp    
+)
+
+target_link_libraries(Calculator PUBLIC my_Math my_Print)
+target_link_libraries(Calculator_02 PUBLIC my_Math my_Print)
